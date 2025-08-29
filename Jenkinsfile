@@ -40,7 +40,7 @@ pipeline {
         sh "docker pull ${REGISTRY}:${BUILD_TAG}"
         sh "docker stop myapp || true"
         sh "docker rm myapp || true"
-        sh "docker run -d --name myapp -p 8080:80 ${REGISTRY}:${BUILD_TAG}"
+        sh "docker run -d --name myapp -p 28080:80 ${REGISTRY}:${BUILD_TAG}"
       }
     }
   }
