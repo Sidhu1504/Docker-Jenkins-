@@ -1,5 +1,5 @@
 # Use official Apache HTTP Server image
-FROM httpd
+FROM docker.io/httpd:lts
 
 # Copy your website files to the default Apache html folder
 COPY ./ /usr/local/apache2/htdocs/
